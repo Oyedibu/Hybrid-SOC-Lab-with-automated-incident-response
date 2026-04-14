@@ -1,1 +1,4 @@
-
+SecurityEvent
+| where EventID == 4625
+| summarize FailureCount = count() by IpAddress, TargetAccount, Computer
+| where FailureCount > 5
