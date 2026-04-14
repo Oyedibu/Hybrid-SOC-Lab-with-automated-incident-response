@@ -3,7 +3,7 @@ This project demonstrates the implementation of a Hybrid SOC environment. I inte
 # Objective
 To build a functional SOC environment that detects brute force attacks on physical endpoints and automates response actions using Microsoft Sentinel(SIEM) and Azure Logic Apps (SOAR)
 
-'''mermaid
+```mermaid
     graph TD
         subgraph "On-Premises (Local Lab)"
             Kali["Kali Linux (Attacker)"] -- Brute Force / Hydra --> WS2022["Windows Server 2022"]
@@ -21,7 +21,7 @@ To build a functional SOC environment that detects brute force attacks on physic
         style Kali fill:#f96,stroke:#333
         style Sentinel fill:#0078d4,color:#fff
         style LogicApp fill:#0078d4,color:#fff
-'''
+```
 # Technologies Used
     .SIEM/SOAR: Microsoft Sentinel
     .CLoud Infrastructure: Azure Log Analytics Workspace, Azure Arc
