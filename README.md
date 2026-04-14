@@ -15,8 +15,8 @@ To build a functional SOC environment that detects brute force attacks on physic
             kgl
             SecurityEvent
             | where EventID ==4625
-            | summarize Count = count() by IpAddress, TargetAccount, bin(TimeGenerated, 5m)
-            | where Count > 5
+            | summarize FailureCount = count() by IpAddress, TargetAccount, Computer
+            | where FailureCount > 5
 # Phase 2: SOAR Implementation
     .Trigger: Created a Logic App Playbook triggered automatically upon Sentinel Incident creation.
     .Workflow Logic:
