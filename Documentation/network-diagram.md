@@ -1,3 +1,4 @@
+```mermaid
 graph TD
     subgraph "On-Premises (Local Lab)"
         Kali["Kali Linux (Attacker)"] -- Brute Force / Hydra --> WS2022["Windows Server 2022"]
@@ -15,3 +16,4 @@ graph TD
     style Kali fill:#f96,stroke:#333
     style Sentinel fill:#0078d4,color:#fff
     style LogicApp fill:#0078d4,color:#fff
+```
