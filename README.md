@@ -2,7 +2,7 @@
 This project demonstrates the implementation of a Hybrid SOC environment. I intergrated a local physical machine with Microsoft Sentinel using Azure Arc and built an automated SOAR playbook to identify and tag brute force attackers in real time
 # Objective
 To build a functional SOC environment that detects brute force attacks on physical endpoints and automates response actions using Microsoft Sentinel(SIEM) and Azure Logic Apps (SOAR)
-'''
+'''mermaid
 graph TD
     subgraph "On-Premises (Local Lab)"
         Kali["Kali Linux (Attacker)"] -- Brute Force / Hydra --> WS2022["Windows Server 2022"]
